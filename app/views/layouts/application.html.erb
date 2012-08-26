@@ -10,10 +10,10 @@
 
 <div id="user_nav">
   <% if current_user %>
-    Welcome, <%= current_user.name %>! <%= link_to "Sign Out", signout_path %>
+    <p>Welcome, <%= current_user.name %>! <%= link_to "Sign Out", signout_path %></p>
   <% else %>
-    <%#= link_to "Sign in with Twitter", "/auth/twitter" %>
-    <%= link_to "Sign in with Facebook", "/auth/facebook" %>
+    <p><%= link_to "Sign in with Twitter", "/auth/twitter" %></p>
+    <p><%= link_to "Sign in with Facebook", "/auth/facebook" %></p>
   <% end %>
 </div>
 
